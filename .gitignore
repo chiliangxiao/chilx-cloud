@@ -104,8 +104,4 @@ backEnd.*
 .sts4-cache/
 /target/
 
-monitorAccount.iml
-src/main/resources/application.properties
-/src/main/resources/test_data/data.json
-
 /.run/
