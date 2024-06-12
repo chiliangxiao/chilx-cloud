@@ -6,10 +6,33 @@
     <parent>
         <groupId>com.chilx</groupId>
         <artifactId>chilx-cloud</artifactId>
-        <version>0.0.1</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>chilx-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+
+    <modules>
+        <module>service-user</module>
+        <module>service-sys</module>
+    </modules>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
