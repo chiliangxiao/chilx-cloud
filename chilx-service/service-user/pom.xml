@@ -5,12 +5,10 @@
     <parent>
         <groupId>com.chilx</groupId>
         <artifactId>chilx-service</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
-    <groupId>com.chilx</groupId>
-    <artifactId>service-user</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>service-user</name>
+     <artifactId>service-user</artifactId>
+     <name>service-user</name>
     <description>service-user</description>
 
     <dependencies>

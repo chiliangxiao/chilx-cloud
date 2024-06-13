@@ -6,7 +6,7 @@
 
     <groupId>com.chilx</groupId>
     <artifactId>chilx-cloud</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
     <packaging>pom</packaging>
     <modules>
         <module>chilx-gateway</module>
@@ -14,6 +14,7 @@
         <module>chilx-service</module>
     </modules>
     <properties>
+        <revision>1.0-SNAPSHOT</revision>
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.boot.version>3.2.6</spring.boot.version>
