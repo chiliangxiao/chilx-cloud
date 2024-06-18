@@ -1,0 +1,24 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8888
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        # id唯一值自定义
+        - id: user-service
+          # 服务地址
+          uri: http://127.0.0.1:8020
+          # 路由规则 以/user/** 开始的路径都会转发到服务地址
+          predicates:
+            - Path=/user/**
+          # 过滤器 去掉第一个前缀路由转发 例如 /user/info/xxx 转发到 /info/xxx
+          filters:
+            - StripPrefix=1
+        - id: sys-service
+          uri: http://127.0.0.1:8010
+          predicates:
+            - Path=/sys/**
+          filters:
+            - StripPrefix=1
