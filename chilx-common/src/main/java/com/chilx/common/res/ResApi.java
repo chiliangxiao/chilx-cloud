@@ -12,11 +12,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ResApi<T> {
 
+    public static final String SUCCESS_CODE = "200";
     private String code;
 
     private String msg;
 
     private T data;
+
+    public boolean success () {
+        return SUCCESS_CODE.equals(code);
+    }
 
     public static <T> ResApi<T> ok() {
         return ok(null);

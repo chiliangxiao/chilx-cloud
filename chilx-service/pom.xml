@@ -14,8 +14,9 @@
 
 
     <modules>
-        <module>service-user</module>
-        <module>service-sys</module>
+        <module>service-user-8020</module>
+        <module>service-sys-8010</module>
+        <module>service-order-8030</module>
     </modules>
 
 
@@ -36,6 +37,10 @@
             <groupId>com.chilx</groupId>
             <artifactId>chilx-common</artifactId>
             <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 

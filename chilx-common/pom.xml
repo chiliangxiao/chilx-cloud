@@ -9,6 +9,12 @@
     </parent>
     <artifactId>chilx-common</artifactId>
     <name>chilx-common</name>
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
