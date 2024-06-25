@@ -10,5 +10,8 @@
     </parent>
     <artifactId>chilx-module</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>module-mybatis</module>
+    </modules>
 
 </project>

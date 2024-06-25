@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chilx.user.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.chilx.user.entity.User">
+    <!--@mbg.generated-->
+    <!--@Table u_user-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="is_del" jdbcType="TINYINT" property="isDel" />
+    <result column="create_user" jdbcType="BIGINT" property="createUser" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_user" jdbcType="BIGINT" property="updateUser" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_name, age, gender, version, is_del, create_user, create_time, update_user, 
+    update_time
+  </sql>
+</mapper>
